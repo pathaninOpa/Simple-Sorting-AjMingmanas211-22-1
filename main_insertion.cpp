@@ -9,9 +9,5 @@ int main(int argc,char ** argv) {
   for(i=1;i<argc;i++)
     a[i-1]=atoi(argv[i]);
   
-  display(a,n);
-  bubbleSort(a,n);
-  cout<<endl<<"--------------"<<endl;
-  display(a,n);
+  insertion(a,n);
 }
-

@@ -1,15 +1,13 @@
-#define N 6
 #include <iostream>
 using namespace std;
 #include "sorting.h"
 
-int main() {
-  int a[N]={3,2,6,7,3,1};
-  int i,j,new_number;
-
-   display(a,N);
-   selectionSort(a,N);
-  // display(a,N);
+int main(int argc,char ** argv) {
+  int *a,i;
+  int n = argc-1;
+  a=new int[n];
+  for(i=1;i<argc;i++)
+    a[i-1]=atoi(argv[i]);
+  
+  selectionSort(a,n);
 }
-
-// new number =2 
